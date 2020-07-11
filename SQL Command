@@ -1,0 +1,17 @@
+BEGIN TRANSACTION;
+
+/* Create a table called NAMES */
+CREATE TABLE NAMES(name varchar(20), th12_mark number, th10_mark number);
+
+/* Create few records in this table */
+INSERT INTO NAMES VALUES('Tom',98,96);
+INSERT INTO NAMES VALUES('Lucy',63,2);
+INSERT INTO NAMES VALUES('Frank',2,63);
+INSERT INTO NAMES VALUES('Jane',2,3);
+
+COMMIT;
+
+/* Display all the records from the table */
+
+
+SELECT * FROM NAMES where th12_mark < 10  and th10_mark < 10 ;
